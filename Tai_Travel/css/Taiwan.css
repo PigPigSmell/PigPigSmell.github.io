@@ -1,0 +1,565 @@
+body{
+    overflow: auto;
+    background-color: lightblue;
+}
+
+#left{
+    background-color: aliceblue;
+    /*border: 3px darkblue solid;*/
+    float: left;
+    height: 97%;
+    width: 45%;
+    position: fixed;
+    box-shadow:inset 0px 0px 10px 2px rgba(20%,20%,40%,0.5);
+    border-radius: 6%;
+}
+
+#right{
+    height: 97%;
+    width: 50%;
+    left: 48%;
+    position: fixed;
+    border: 1px black solid;
+}
+
+#div0 {
+    position: absolute;
+    background-color: violet;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    width: 2.2%;
+    height: 2%;
+    -webkit-transition: opacity 2s; /* Safari */
+    transition: opacity 1s;
+    opacity: 1;
+    z-index: -1;
+}
+#div0:hover {
+    opacity: 0;
+    border-radius: 100%;
+    width: 2%;
+    height: 1.8%;
+    background-color: purple;
+}
+
+#div1 {
+    position: absolute;
+    background-color: gold;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    width: 2.2%;
+    height: 2%;
+    -webkit-transition: opacity 2s; /* Safari */
+    transition: opacity 1s;
+    opacity: 1;
+    z-index: -1;
+}
+#div1:hover {
+    opacity: 0;
+    border-radius: 100%;
+    width: 2%;
+    height: 1.8%;
+    background-color: darkgoldenrod;
+}
+
+#div2 {
+    position: absolute;
+    background-color: lightskyblue;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    width: 2.2%;
+    height: 2%;
+    -webkit-transition: opacity 2s; /* Safari */
+    transition: opacity 1s;
+    opacity: 1;
+    z-index: -1;
+}
+#div2:hover {
+    opacity: 0;
+    border-radius: 100%;
+    width: 2%;
+    height: 1.8%;
+    background-color: blue;
+}
+
+#div3 {
+    position: absolute;
+    background-color: lightgreen;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    width: 2.2%;
+    height: 2%;
+    -webkit-transition: opacity 2s; /* Safari */
+    transition: opacity 1s;
+    opacity: 1;
+    z-index: -1;
+}
+#div3:hover {
+    opacity: 0;
+    border-radius: 100%;
+    width: 2%;
+    height: 1.8%;
+    background-color: green;
+}
+
+
+#div_Taipei {
+    position: absolute;
+    text-align: center;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    padding: 0 0 0 0;
+    background-color: violet;
+    width: 8.5%;
+    height: 7%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+    overflow: hidden
+}
+#div_Taipei:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px purple solid;
+}
+
+#div_Keelung {
+    position: absolute;
+    text-align: center;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    overflow: hidden;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: violet;
+    width: 4%;
+    height: 3.2%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Keelung:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px purple solid;
+}
+
+#div_Taoyuan {
+    position: absolute;
+    text-align: center;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    overflow: hidden;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: violet;
+    width: 6.8%;
+    height: 6%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Taoyuan:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px purple solid;
+}
+
+#div_Hsinchu {
+    position: absolute;
+    text-align: center;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    overflow: hidden;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: violet;
+    width: 6%;
+    height: 5.3%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Hsinchu:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px purple solid;
+}
+
+#div_Yilan {
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: violet;
+    width: 10.3%;
+    height: 9.3%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Yilan:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px purple solid;
+}
+
+#div_Miaoli {
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: gold;
+    width: 9.2%;
+    height: 8.2%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Miaoli:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px darkgoldenrod solid;
+}
+
+#div_Taichung {
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: gold;
+    width: 8%;
+    height: 7%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Taichung:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px darkgoldenrod solid;
+}
+
+#div_Changhua {
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: gold;
+    width: 7%;
+    height: 6.5%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Changhua:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px darkgoldenrod solid;
+}
+
+#div_Nantou {
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: gold;
+    width: 14.3%;
+    height: 12.5%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Nantou:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px darkgoldenrod solid;
+}
+
+#div_Yunlin {
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: lightskyblue;
+    width: 6.8%;
+    height: 6%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Yunlin:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px blue solid;
+}
+
+#div_Chiayi {
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: lightskyblue;
+    width: 8%;
+    height: 7.2%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Chiayi:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px blue solid;
+}
+
+#div_Tainan {
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: lightskyblue;
+    width: 10.8%;
+    height: 9.7%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Tainan:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px blue solid;
+}
+
+#div_Kaohsiung {
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: lightskyblue;
+    width: 8.8%;
+    height: 7.6%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Kaohsiung:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px blue solid;
+}
+
+#div_Pingtung {
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: lightskyblue;
+    width: 9.8%;
+    height: 8.5%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Pingtung:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px blue solid;
+}
+
+#div_Hualien {
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: lightgreen;
+    width: 10.2%;
+    height: 8.9%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Hualien:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px green solid;
+}
+
+#div_Taitung {
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: lightgreen;
+    width: 11.8%;
+    height: 10.3%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Taitung:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px green solid;
+}
+
+#div_Little_croquet {
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: lightcoral;
+    width: 3.2%;
+    height: 3%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Little_croquet:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px darkred solid;
+}
+
+#div_Lanyu {
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: lightcoral;
+    width: 3.2%;
+    height: 3%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Lanyu:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px darkred solid;
+}
+
+#div_Green_Island {
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: lightcoral;
+    width: 3.2%;
+    height: 3%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Green_Island:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px darkred solid;
+}
+
+#div_Guishan_Island {
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: lightcoral;
+    width: 3.2%;
+    height: 3%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Guishan_Island:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px darkred solid;
+}
+
+#div_Mazu {
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: lightcoral;
+    width: 4.3%;
+    height: 3.6%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Mazu:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px darkred solid;
+}
+
+#div_Kinmen {
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: lightcoral;
+    width: 4.5%;
+    height: 4%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Kinmen:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px darkred solid;
+}
+
+#div_Penghu {
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:0px 0px 3px 1px gainsboro;
+    font-size: 100%;
+    padding: 0 0 0 0;
+    background-color: lightcoral;
+    width: 8%;
+    height: 7%;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+#div_Penghu:hover {
+    width: 20%;
+    z-index: 1;
+    border: 2px darkred solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
