@@ -19,7 +19,21 @@ body{
     width: 50%;
     left: 48%;
     position: fixed;
-    border: 1px black solid;
+    /*border: 1px black solid;*/
+}
+
+#title{
+    background-color: darkblue;
+    color: aliceblue;
+    text-align: center;
+}
+
+#show{
+    list-style-type: none;
+    color: darkblue;
+    width: 100%;
+    font-size: 15px;
+    padding: 3%;
 }
 
 #div0 {
@@ -139,6 +153,8 @@ body{
 #div_Taoyuan {
     position: absolute;
     text-align: center;
+    top: 8%; 
+    left: 53.6%;
     box-shadow:0px 0px 3px 1px gainsboro;
     overflow: hidden;
     font-size: 100%;
@@ -146,13 +162,14 @@ body{
     background-color: violet;
     width: 6.8%;
     height: 6%;
-    -webkit-transition: width 2s; /* Safari */
-    transition: width 2s;
+    -webkit-transition: width 2s, left 2s; /* Safari */
+    transition: width 2s, left 2s;
 }
 #div_Taoyuan:hover {
     width: 20%;
     z-index: 1;
     border: 2px purple solid;
+    /*left: 40%;*/
 }
 
 #div_Hsinchu {
@@ -402,7 +419,7 @@ body{
     border: 2px green solid;
 }
 
-#div_Little_croquet {
+#div_Liouciou_Island {
     position: absolute;
     text-align: center;
     overflow: hidden;
@@ -415,7 +432,7 @@ body{
     -webkit-transition: width 2s; /* Safari */
     transition: width 2s;
 }
-#div_Little_croquet:hover {
+#div_Liouciou_Island:hover {
     width: 20%;
     z-index: 1;
     border: 2px darkred solid;
