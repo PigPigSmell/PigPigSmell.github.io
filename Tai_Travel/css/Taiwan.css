@@ -1,7 +1,8 @@
 body{
-    overflow: auto;
+    overflow-y: scroll;
     background-color: #D2EFF6;
     background-attachment: fixed;
+    font-family: Microsoft JhengHei;
 }
 
 #left{
@@ -17,7 +18,7 @@ body{
     height: 97%;
     width: 55%;
     float: right;
-    margin: 0 3%;
+    margin: 0.5% 3%;
 }
 
 #title{
@@ -50,6 +51,27 @@ body{
 }
 #box:hover{
     width: 25%;
+    color: darkblue;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 8%; /* Place the button at the bottom of the page */
+  right: 1.5%; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: darkblue; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 20%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+#myBtn:hover {
+    border: 2px darkblue solid;
+  background-color: lightblue; /* Add a dark-grey background on hover */
     color: darkblue;
 }
 
