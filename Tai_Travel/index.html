@@ -11,6 +11,7 @@
         <script src="js/Taiwan.js"></script> 
     </head>
     <body background="photo/sea.png" style="background-size: 100%;">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         <div id="left">
             <!--img src="picture/Taiwan2.png" alt="Taiwan" height="95%" style="top: 0.5%; z-index: 0; position: absolute; "-->
             
@@ -275,14 +276,58 @@
             
         </div>
         <div id="right">
-            <div id="R_content"></div>
+            <div id="R_content">
+                <div style=" background-color: gainsboro; opacity: 0.6; position: fixed; width: 50%; height: 220px; margin: 15% 4%"></div>
+                <div style="">
+                    <h1 style="text-align: center; color: darkslateblue; font-weight: bolder; margin-top: 15%; position: fixed; padding: 2% 5%; font-family: serif;">
+                        Welcome to Tai's Travel journal!<br><br>
+                        Please press the countries to see the locations that Tai have went and the food that Tai have eaten!
+                    </h1>
+                </div>
+            </div>
         </div>
         
         <!--content><-->
         <!--north><-->
         <div id="right"> 
             <div id="R_Keelung" style="display: none">
-                <h1 id="title">Keelung</h1>
+                <h1 id="title">基隆 &nbsp; Keelung</h1>
+                <div width="100%" style="float: left">
+                    <div id="box">
+                        <img src="photo/p_photo.png" alt="" width="20%" style="float: left; width: 100%;">
+                        grade: 4/5
+                    </div>
+                    <div id="box">
+                        <img src="photo/p_photo.png" alt="" width="20%" style="float: left; width: 100%;">
+                        grade: ***
+                    </div>
+                    <div id="box">
+                        <img src="photo/p_photo.png" alt="scallion pie 蔥油餅" width="20%" style="float: left; width: 100%;">
+                        grade: ***
+                    </div>
+                    <div id="box">
+                        <img src="photo/p_photo.png" alt="scallion pie 蔥油餅" width="20%" style="float: left; width: 100%;">
+                        grade: ***
+                    </div>
+                </div>
+                <div width="100%" style="float: left">
+                    <div id="box">
+                        <img src="photo/p_photo.png" alt="" width="20%" style="float: left; width: 100%;">
+                        grade: ***
+                    </div>
+                    <div id="box">
+                        <img src="photo/p_photo.png" alt="" width="20%" style="float: left; width: 100%;">
+                        grade: ***
+                    </div>
+                    <div id="box">
+                        <img src="photo/p_photo.png" alt="scallion pie 蔥油餅" width="20%" style="float: left; width: 100%;">
+                        grade: ***
+                    </div>
+                    <div id="box">
+                        <img src="photo/p_photo.png" alt="scallion pie 蔥油餅" width="20%" style="float: left; width: 100%;">
+                        grade: ***
+                    </div>
+                </div>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/p_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -317,7 +362,7 @@
                 </div>
             </div>
             <div id="R_Taipei" style="display: none">
-                <h1 id="title">Taipei</h1>
+                <h1 id="title">台北 &nbsp; Taipei</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/p_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -352,7 +397,7 @@
                 </div>
             </div>
             <div id="R_Taoyuan" style="display: none">
-                <h1 id="title">Taoyuan</h1>
+                <h1 id="title">桃園 &nbsp; Taoyuan</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/p_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -387,7 +432,7 @@
                 </div>
             </div>
             <div id="R_Hsinchu" style="display: none">
-                <h1 id="title">Hsinchu</h1>
+                <h1 id="title">新竹 &nbsp; Hsinchu</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/p_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -422,7 +467,7 @@
                 </div>
             </div>
             <div id="R_Yilan" style="display: none">
-                <h1 id="title">Yilan</h1>
+                <h1 id="title">宜蘭 &nbsp; Yilan</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/p_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -461,7 +506,7 @@
         <!--west><-->
         <div id="right">
             <div id="R_Miaoli" style="display: none">
-                <h1 id="title">Miaoli</h1>
+                <h1 id="title">苗栗 &nbsp; Miaoli</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/y_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -496,7 +541,7 @@
                 </div>
             </div>
             <div id="R_Taichung" style="display: none">
-                <h1 id="title">Taichung</h1>
+                <h1 id="title">台中 &nbsp; Taichung</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/y_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -531,7 +576,7 @@
                 </div>
             </div>
             <div id="R_Changhua" style="display: none">
-                <h1 id="title">Changhua</h1>
+                <h1 id="title">彰化 &nbsp; Changhua</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/y_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -566,7 +611,7 @@
                 </div>
             </div>
             <div id="R_Nantou" style="display: none">
-                <h1 id="title">Nantou</h1>
+                <h1 id="title">南投 &nbsp; Nantou</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/y_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -603,9 +648,9 @@
         </div>
         
         <!--south><-->
-        <div>
+        <div id="right">
             <div id="R_Yunlin" style="display: none">
-                <h1 id="title">Yunlin</h1>
+                <h1 id="title">雲林 &nbsp; Yunlin</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/b_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -640,7 +685,7 @@
                 </div>
             </div>
             <div id="R_Chiayi" style="display: none">
-                <h1 id="title">Chiayi</h1>
+                <h1 id="title">嘉義 &nbsp; Chiayi</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/b_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -675,7 +720,7 @@
                 </div>
             </div>
             <div id="R_Tainan" style="display: none">
-                <h1 id="title">Tainan</h1>
+                <h1 id="title">台南 &nbsp; Tainan</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/b_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -710,7 +755,7 @@
                 </div>
             </div>
             <div id="R_Kaohsiung" style="display: none">
-                <h1 id="title">Kaohsiung</h1>
+                <h1 id="title">高雄 &nbsp; Kaohsiung</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/b_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -745,7 +790,7 @@
                 </div>
             </div>
             <div id="R_Pingtung" style="display: none">
-                <h1 id="title">Pingtung</h1>
+                <h1 id="title">屏東 &nbsp; Pingtung</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/b_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -782,9 +827,9 @@
         </div>
         
         <!--east><-->
-        <div>
+        <div id="right">
             <div id="R_Hualien" style="display: none">
-                <h1 id="title">Hualien</h1>
+                <h1 id="title">花蓮 &nbsp; Hualien</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/g_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -819,7 +864,7 @@
                 </div>
             </div>
             <div id="R_Taitung" style="display: none">
-                <h1 id="title">Taitung</h1>
+                <h1 id="title">台東 &nbsp; Taitung</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/g_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -856,9 +901,9 @@
         </div>
         
         <!--island><-->
-        <div>
+        <div id="right">
             <div id="R_Liouciou_Island" style="display: none">
-                <h1 id="title">Liouciou_Island</h1>
+                <h1 id="title">小琉球 &nbsp; Liouciou Island</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/r_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -893,7 +938,7 @@
                 </div>
             </div>
             <div id="R_Lanyu" style="display: none">
-                <h1 id="title">Lanyu</h1>
+                <h1 id="title">蘭嶼 &nbsp; Lanyu</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/r_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -928,7 +973,7 @@
                 </div>
             </div>
             <div id="R_Green_Island" style="display: none">
-                <h1 id="title">Green_Island</h1>
+                <h1 id="title">綠島 &nbsp; Green Island</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/r_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -963,7 +1008,7 @@
                 </div>
             </div>
             <div id="R_Guishan_Island" style="display: none">
-                <h1 id="title">Guishan_Island</h1>
+                <h1 id="title">龜山島 &nbsp; Guishan Island</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/r_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -998,7 +1043,7 @@
                 </div>
             </div>
             <div id="R_Mazu" style="display: none">
-                <h1 id="title">Mazu</h1>
+                <h1 id="title">馬祖 &nbsp; Mazu</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/r_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -1033,7 +1078,7 @@
                 </div>
             </div>
             <div id="R_Kinmen" style="display: none">
-                <h1 id="title">Kinmen</h1>
+                <h1 id="title">金門 &nbsp; Kinmen</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/r_photo.png" alt="" width="20%" style="float: left; width: 100%;">
@@ -1068,7 +1113,7 @@
                 </div>
             </div>
             <div id="R_Penghu" style="display: none">
-                <h1 id="title">Penghu</h1>
+                <h1 id="title">澎湖 &nbsp; Penghu</h1>
                 <div width="100%" style="float: left">
                     <div id="box">
                         <img src="photo/r_photo.png" alt="" width="20%" style="float: left; width: 100%;">
