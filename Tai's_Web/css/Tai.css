@@ -66,15 +66,17 @@ img{
 
 /* Use a media query to add a break point at 800px: */
 @media screen and (max-width:1000px) {
-  #left_part, #main_part_inner{
-    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
-    position: static;
-    padding: 10px;
-    margin: 0;
+    #left_part, #main_part_inner{
+        width:100%; /* The width is 100%, when the viewport is 800px or less */
+        position: static;
+        padding: 10px;
+        margin: 0;
+    }
 }
 @media screen and (max-width:1000px) {
-  img{
-    width:100px; /* The width is 100%, when the viewport is 800px or smaller */
+    img{
+        width:100px; /* The width is 100px, when the viewport is 800px or less */
+    }
 }
 
 
