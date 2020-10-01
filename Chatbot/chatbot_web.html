@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chatbot Demo</title>
+    
+    <link rel="stylesheet" href="css/chatbot_css.css">
+    
+    <meta charset="utf-8">
+    <meta name="keywords" content="Chatbot">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script>
+        * {
+          box-sizing: border-box;
+        }
+    </script>
+
+    <script>
+         //滑鼠移進去
+         function videoPlayback(){
+             //獲取視訊標籤
+             var video = document.getElementById('video'); 
+             //給視訊標籤新增快取播放---video標籤屬性。
+             video.setAttribute("autoplay","autoplay")
+             //給視訊標籤新增迴圈播放---video標籤屬性。
+             video.setAttribute("loop","loop")
+             //播放視訊
+             video.play();
+         }
+         
+         //滑鼠離開
+         function videoStopped(){
+             //獲取視訊標籤
+             var oDiv = document.getElementById('video'); 
+             //停止播放
+             video.pause();
+         }
+     </script>
+    <!--style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+          background-color: #666;
+          padding: 3px;
+          text-align: left;
+          font-size: 20px;
+          color: white;
+        }
+
+        /* Container for flexboxes */
+        section {
+          display: -webkit-flex;
+          display: flex;
+        }
+
+        /* Style the navigation menu */
+        nav {
+          -webkit-flex: 2;
+          -ms-flex: 2;
+          flex: 2;
+          background: #ccc;
+          padding: 10px;
+          text-align: center;
+        }
+
+        /* Style the content */
+        article {
+          -webkit-flex: 3;
+          -ms-flex: 3;
+          flex: 3;
+          background-color: #f1f1f1;
+          padding: 10px;
+        }
+
+        article p.dialogflow {
+          text-align: center;
+        }
+        article p.control_button {
+          text-align: right;
+        }
+
+        /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+          section {
+            -webkit-flex-direction: column;
+            flex-direction: column;
+          }
+        }
+    </style-->
+</head>
+
+<body>
+
+    <h1 style="padding-left: 70px; position: relative">Chatbot</h1>
+    <h2 style="padding-left: 70px; position: relative; color: gainsboro">Welcome, this is a demo website for customer.</h2>
+    
+    <div id="main_part_inner">
+        <div id="vertical_line" style="float: left; margin-left: 5%"></div>
+        <div id="vertical_line" style="float: left; margin-left: 8%"></div>
+        <div id="vertical_line" style="float: left; margin-left: 11%"></div>
+        
+        <div id="left_part">
+            <h2>This part is a animation part.</h2>
+            <div style="margin-top: 30%; position: relative; box-shadow: 0px 0px 10px 2px rgba(20%,20%,40%,0.5);">
+                <video id="video" onmouseover="videoPlayback()" onmouseout="videoStopped()" width="100%">
+                <!--視訊型別為視訊和視訊路徑-->
+                <h1></h1>
+                <source type="audio/mp4" src="video/3second.mp4">
+                </video>
+            </div>
+        </div>
+        
+        <!--div id="vertical_line" style="margin-left: 47.5%"></div-->
+        
+        <div id="right_part">
+            <h2>This part is a chatbot.</h2>
+            <iframe style="width: 80%; height: 85%; border-radius: 1%; box-shadow: 0px 0px 10px 2px rgba(20%,20%,40%,0.5); position: relative"
+                allow="microphone;"
+                src="https://console.dialogflow.com/api-client/demo/embedded/f5fc80e5-b47b-4bfb-bb61-7df525577f79">
+            </iframe>
+        </div>
+        
+        <div id="vertical_line" style="margin-left: 89.3%"></div>
+        <div id="vertical_line" style="margin-left: 86.3%"></div>
+        <div id="vertical_line" style="margin-left: 83.3%"></div>
+    </div>
+    
+    <section>
+        <p>An iframe is used to display a web page of Dialogflow:</p>
+        <p class="dialogflow">
+          
+        </p>
+
+    < 
+        <p>Count numbers: <output id="result"></output></p>
+        <p class=control_button>
+        <button onclick="startWorker()">Start Worker</button> 
+        <button onclick="stopWorker()">Stop Worker</button>
+        </p>
+        >
+
+      </article>
+    </section-->
+
+
+    <!-- 
+
+    <script>
+    var w;
+
+    function startWorker() {
+      if(typeof(Worker) !== "undefined") {
+        if(typeof(w) == "undefined") {
+          w = new Worker("demo_workers.js");
+        }
+        w.onmessage = function(event) {
+          document.getElementById("result").innerHTML = event.data;
+        };
+      } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
+      }
+    }
+
+    function stopWorker() { 
+      w.terminate();
+      w = undefined;
+    }
+    </script>
+
+
+     -->
+</body>
+</html>
