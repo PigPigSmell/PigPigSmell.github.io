@@ -65,10 +65,12 @@ a:active {
     margin: 2% 4.5% 2% 4.5%;
 }
 
+/*
 #poster:hover {
     width: 50%;
     margin: 0% 0% 0% 0%;
 }
+*/
 
 /* Use a media query to add a break point at 800px: */
 @media screen and (max-width:1000px) {
